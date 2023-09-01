@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AMS - Login</title>
+
+        <!-- Main CSS File -->
+        <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+     </head>
+    <body>
+        <h2>Assignment Management System</h2>
+        <!-- form begins -->
+        <form id="form" method="post" action="{{ url_for('login') }}">
+
+            <div class="form-control">
+                <label for="role">Role</label><br>
+                <select id="role" name="role">
+                    <option value="faculty">Faculty</option>
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>     
+            
+            <div class="form-control">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Enter your Email id"><br>
+            </div>
+
+            
+            <div class="form-control">
+                <label for="pwd">Password</label><br>
+                <input type="password" name="pwd" id="pwd" placeholder="Please set your password"><br>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" class="btn btn-success">Login</button>
+            </div>
+
+            <div>
+                <p> Faculty Registration  <a href=" {{url_for('facultyreg')}}">Click Here</a></p>
+                <p> Student Registration  <a href=" {{url_for('registration')}}">Click Here</a></p>
+                <p> Admin Registration  <a href=" {{url_for('adminreg')}}">Click Here</a></p>
+            </div>
+
+        </form>
+        
+        <!-- form end -->
+        <h2>{{msg}}</h2>
+    </body>
+</html>
