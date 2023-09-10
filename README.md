@@ -11,5 +11,6 @@ https://amsproject-git-sudeep-mansh-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.co
 3. YAML
 http://ams-service-sudeep-mansh-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/
 
-Docker hub repository
-sudeepmansh/myrepo
+Docker hub repository: sudeepmansh/myrepo
+
+Demonstration video link: https://drive.google.com/file/d/1SLY6rl9KwyeNdh0ntm2h299nlixX2ixd/view?usp=drive_link
