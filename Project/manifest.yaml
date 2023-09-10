@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: amsproject
+  labels:
+    app: amsproject
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: amsproject
+  template:
+    metadata:
+      labels:
+        app: amsproject
+    spec:
+      containers:
+      - name: amsproject
+        image: docker.io/sudeepmansh/myrepo
+        ports:
+        - containerPort: 5000
